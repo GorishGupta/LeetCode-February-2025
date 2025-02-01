@@ -8,6 +8,7 @@ public class DS3151{
         return true;
     }
     public static void main(String[] args) {
+        // TEST
         DS3151 obj = new DS3151();
         int[] nums = {1, 2, 3, 4, 5};
         System.out.println(obj.isArraySpecial(nums));
