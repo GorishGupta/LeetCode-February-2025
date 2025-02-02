@@ -1,3 +1,4 @@
+import java.util.*;
 public class DS1752 {
     class Solution {
         public boolean check(int[] nums) {
