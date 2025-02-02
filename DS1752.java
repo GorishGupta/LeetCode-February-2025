@@ -21,7 +21,6 @@ public class DS1752 {
         }
     }
     public static void main(String[] args) {
-        // TEST
         DS1752 obj = new DS1752();
         Solution solution = obj.new Solution();
         int[] nums = {3, 4, 5, 1, 2};
