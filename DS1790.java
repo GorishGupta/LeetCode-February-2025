@@ -23,7 +23,6 @@ public class DS1790 {
         return false;
         }
     }
-    //main method
     public static void main(String[] args) {
         DS1790 obj = new DS1790();
         Solution solution = obj.new Solution();
