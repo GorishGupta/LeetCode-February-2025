@@ -21,7 +21,7 @@ public class DS3105 {
             
         }  
         return max;
-        }
+        
     }
     public static void main(String[] args) {
         DS3105 obj = new DS3105();
@@ -29,4 +29,5 @@ public class DS3105 {
         int[] nums = {5, 3, 2, 4, 1};
         System.out.println(solution.longestMonotonicSubarray(nums));
     }
+}
 }
