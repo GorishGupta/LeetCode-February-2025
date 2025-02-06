@@ -29,5 +29,6 @@ public class DS1790 {
         String s1 = "bank";
         String s2 = "kanb";
         System.out.println(solution.areAlmostEqual(s1, s2));
+        System.out.println(solution.areAlmostEqual("attack", "defend"));
     }
 }
