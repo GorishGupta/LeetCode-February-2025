@@ -19,4 +19,16 @@ public class DS2349 {
             return pq.isEmpty()? -1 : pq.peek();
         }
     }
+    public static void main(String[] args) {
+        DS2349 obj = new DS2349();
+        NumberContainers nc = obj.new NumberContainers();
+        nc.change(1, 1);
+        nc.change(2, 2);
+        nc.change(1, 2);
+        nc.change(1, 1);
+        nc.change(3, 3);
+        System.out.println(nc.find(1));
+        System.out.println(nc.find(2));
+        System.out.println(nc.find(3));
+    }
 }
