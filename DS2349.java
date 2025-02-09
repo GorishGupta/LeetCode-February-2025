@@ -19,6 +19,7 @@ public class DS2349 {
             return pq.isEmpty()? -1 : pq.peek();
         }
     }
+    
     // Test
     public static void main(String[] args) {
         DS2349 obj = new DS2349();
