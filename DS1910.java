@@ -11,6 +11,7 @@ public class DS1910 {
             return s;        
         }
     }
+    //main function
     public static void main(String[] args) {
         DS1910 obj = new DS1910();
         Solution solution = obj.new Solution();
