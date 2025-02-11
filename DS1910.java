@@ -11,5 +11,10 @@ public class DS1910 {
             return s;        
         }
     }
-    
+    public static void main(String[] args) {
+        DS1910 obj = new DS1910();
+        Solution solution = obj.new Solution();
+        System.out.println(solution.removeOccurrences("daabcbaabcbc", "abc"));
+        System.out.println(solution.removeOccurrences("axxxxyyyyxyxyxyxyxy", "xy"));
+    }
 }
