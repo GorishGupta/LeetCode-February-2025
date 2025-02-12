@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class DS2342 {
     class Solution {
     public int maximumSum(int[] nums) {
@@ -23,4 +22,10 @@ public class DS2342 {
         return ans;
     }
 }
-}
+    public static void main(String[] args) {
+        DS2342 obj = new DS2342();
+        Solution solution = obj.new Solution();
+        int[] nums = {55, 3, 6, 7, 8, 9, 11, 12, 13, 14};
+        System.out.println(solution.maximumSum(nums));
+    }
+    }
