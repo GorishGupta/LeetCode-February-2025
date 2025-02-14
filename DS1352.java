@@ -27,6 +27,17 @@ public class DS1352 {
     }
 }
 public static void main(String[] args) {
-    
+    DS1352 d = new DS1352();
+    DS1352.ProductOfNumbers p = d.new ProductOfNumbers();
+    p.add(3);
+    p.add(0);
+    p.add(2);
+    p.add(5);
+    p.add(4);
+    System.out.println(p.getProduct(2));
+    System.out.println(p.getProduct(3));
+    System.out.println(p.getProduct(4));
+    p.add(8);
+    System.out.println(p.getProduct(2));
 }
 }
