@@ -26,4 +26,7 @@ public class DS1352 {
         return ans / list.get(list.size() - 1 - k);
     }
 }
+public static void main(String[] args) {
+    
+}
 }
