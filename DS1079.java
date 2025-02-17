@@ -28,6 +28,8 @@ public class DS1079 {
         }
     } 
     public static void main(String[] args) {
-        
+        DS1079 d = new DS1079();
+        Solution s = d.new Solution();
+        System.out.println(s.numTilePossibilities("AAB"));
     }
 }
