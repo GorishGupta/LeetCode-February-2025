@@ -27,4 +27,7 @@ public class DS1079 {
             arr[j] = temp;
         }
     } 
+    public static void main(String[] args) {
+        
+    }
 }
