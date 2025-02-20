@@ -1,4 +1,5 @@
 public class DS1980 {
+    // Leetcode Question 1980 solution
     class Solution{
         public String findDiffrentBinaryString(String [] nums){
             StringBuilder result = new StringBuilder();
@@ -13,6 +14,7 @@ public class DS1980 {
             return result.toString();
         }
     }
+    // main  function 
     public static void main(String[] args) {
         DS1980 d = new DS1980();
         Solution s = d.new Solution();
