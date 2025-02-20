@@ -13,4 +13,10 @@ public class DS1980 {
             return result.toString();
         }
     }
+    public static void main(String[] args) {
+        DS1980 d = new DS1980();
+        Solution s = d.new Solution();
+        String [] nums = {"00","01"};
+        System.out.println(s.findDiffrentBinaryString(nums));
+    }
 }

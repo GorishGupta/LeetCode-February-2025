@@ -36,7 +36,7 @@ public class DS1718 {
                 }
             }
             return false;
-        }
+        }   
     }
     public static void main(String[] args) {
         DS1718 d = new DS1718();
