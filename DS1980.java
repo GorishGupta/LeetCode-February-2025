@@ -1,6 +1,7 @@
 public class DS1980 {
     // Leetcode Question 1980 solution
     class Solution{
+        // function to find the different binary string
         public String findDiffrentBinaryString(String [] nums){
             StringBuilder result = new StringBuilder();
             for(int i=0;i<nums.length;i++){
