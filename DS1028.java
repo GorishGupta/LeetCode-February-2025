@@ -1,6 +1,18 @@
 import javax.swing.tree.TreeNode;
 
 public class DS1028{
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     public class Solution {
 
     static int index = 0;
@@ -45,5 +57,9 @@ public class DS1028{
 
         return node;
     }
+}
+public static void main(String[] args) {
+    Solution solution = new Solution();
+    System.out.println(solution.recoverFromPreorder("1-2--3--4-5--6--7"));
 }
 }
