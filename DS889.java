@@ -35,4 +35,18 @@ public class DS889 {
         return root;
     }
 }
+public static void main(String[] args) {
+    DS889 ds889 = new DS889();
+    DS889.Solution solution = ds889.new Solution();
+    int[] preorder = new int[]{1, 2, 4, 5, 3, 6, 7};
+    int[] postorder = new int[]{4, 5, 2, 6, 7, 3, 1};
+    TreeNode root = solution.constructFromPrePost(preorder, postorder);
+    System.out.println(root.val);
+    System.out.println(root.left.val);
+    System.out.println(root.right.val);
+    System.out.println(root.left.left.val);
+    System.out.println(root.left.right.val);
+    System.out.println(root.right.left.val);
+    System.out.println(root.right.right.val);
+}
 }
