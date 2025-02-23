@@ -59,7 +59,7 @@ public class DS1028{
     }
 }
 public static void main(String[] args) {
-    Solution solution = new Solution();
+    DS1028 solution = new DS1028();
     System.out.println(solution.recoverFromPreorder("1-2--3--4-5--6--7"));
 }
 }
