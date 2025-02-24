@@ -34,7 +34,6 @@ public class DS2467 {
                     );
                 }
             }
-    
             // Alice reaches the node first
             if (distanceFromBob[sourceNode] > time) {
                 maxIncome += amount[sourceNode];
