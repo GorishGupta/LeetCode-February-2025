@@ -10,4 +10,7 @@ public class DS1524 {
             return (int)(oddCount % 1_000_000_007);
         }
     }
+    public static void main(String[] args) {
+        
+    }
 }
