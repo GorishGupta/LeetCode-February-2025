@@ -43,6 +43,7 @@ public class DS873 {
         arr = new int[]{1, 3, 7, 11, 12, 14, 18};
         System.out.println(solution.lenLongestFibSubseq(arr)); // 3
         arr = new int[]{1, 5, 7, 10, 12, 15, 20};
-        System.out.println(solution.lenLongestFibSubseq(arr)); // 0
+        System.out.println(solution.lenLongestFibSubseq(arr)); // 0 
+        
     }
 }
