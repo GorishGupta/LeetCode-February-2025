@@ -1,42 +1,36 @@
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 public class DS873 {
     class Solution {
-    public int lenLongestFibSubseq(int[] arr) {
-        Set<Integer> nums_set = new HashSet<>();
 
-        for (int num : arr) {
-            nums_set.add(num);
-        }
-
-        Map<Map.Entry<Integer, Integer>, Integer> sequences = new HashMap<>();
-
-        for (int i = 2; i < arr.length; i++) {
-            int third = arr[i];
-
-            for (int j = i - 1; j > 0; j--) {
-                int second = arr[j];
-
-                if (second <= third / 2) {
-                    break;
-                }
-
-                int first = third - second;
-
-                if (nums_set.contains(first)) {
-                    int sequence_len = sequences.getOrDefault(hashPair(second, first), 2);
-                    sequences.put(hashPair(third, second), sequence_len + 1);
+        public int lenLongestFibSubseq(int[] arr) {
+            int n = arr.length;
+            // Store array elements in set for O(1) lookup
+            Set<Integer> numSet = new HashSet<>();
+            for (int num : arr) {
+                numSet.add(num);
+            }
+    
+            int maxLen = 0;
+            // Try all possible first two numbers of sequence
+            for (int start = 0; start < n; ++start) {
+                for (int next = start + 1; next < n; ++next) {
+                    // Start with first two numbers
+                    int prev = arr[next];
+                    int curr = arr[start] + arr[next];
+                    int len = 2;
+    
+                    // Keep finding next Fibonacci number
+                    while (numSet.contains(curr)) {
+                        // Update values for next iteration
+                        int temp = curr;
+                        curr += prev;
+                        prev = temp;
+                        maxLen = Math.max(maxLen, ++len);
+                    }
                 }
             }
+            return maxLen;
         }
-
-        return sequences.values().stream().max(Integer::compare).orElse(0);
     }
-
-    private Map.Entry<Integer, Integer> hashPair(int a, int b) {
-        return Map.entry(a, b);
-    }
-}
 }
