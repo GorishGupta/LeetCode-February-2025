@@ -33,4 +33,16 @@ public class DS873 {
             return maxLen;
         }
     }
+    public static void main(String[] args) {
+        DS873 ds873 = new DS873();
+        DS873.Solution solution = ds873.new Solution();
+        
+        // Test cases
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        System.out.println(solution.lenLongestFibSubseq(arr)); // 5
+        arr = new int[]{1, 3, 7, 11, 12, 14, 18};
+        System.out.println(solution.lenLongestFibSubseq(arr)); // 3
+        arr = new int[]{1, 5, 7, 10, 12, 15, 20};
+        System.out.println(solution.lenLongestFibSubseq(arr)); // 0
+    }
 }
