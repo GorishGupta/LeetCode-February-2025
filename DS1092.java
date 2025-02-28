@@ -1,4 +1,5 @@
 public class DS1092 {
+    //solution class
     class Solution {
         public String shortestCommonSupersequence(String s1, String s2) {
             int n = s1.length();
@@ -52,8 +53,8 @@ public class DS1092 {
     public static void main(String[] args) {
         DS1092 ds1092 = new DS1092();
         DS1092.Solution solution = ds1092.new Solution();
-        
         // Test cases
+        
         String s1 = "abac";
         String s2 = "cab";
         System.out.println(solution.shortestCommonSupersequence(s1, s2)); // "cabac"
