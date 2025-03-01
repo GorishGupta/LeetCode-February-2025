@@ -21,4 +21,34 @@ public class DS2460 {
             return arr;
         }
     }
+    public static void main(String[] args) {
+        DS2460 ds2460 = new DS2460();
+        DS2460.Solution solution = ds2460.new Solution();
+        
+        // Test cases
+        int[] arr = {2, 2, 0, 4};
+        int[] res = solution.applyoperations(arr);
+        for(int num : res){
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        arr = new int[]{0, 2, 2, 2};
+        res = solution.applyoperations(arr);
+        for(int num : res){
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        arr = new int[]{2, 2, 2, 2};
+        res = solution.applyoperations(arr);
+        for(int num : res){
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        arr = new int[]{2, 2, 2, 2, 2};
+        res = solution.applyoperations(arr);
+        for(int num : res){
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
 }
