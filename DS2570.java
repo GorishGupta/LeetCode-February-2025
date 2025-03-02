@@ -8,6 +8,7 @@ public class DS2570 {
         int n = nums2.length;
         int i=0;
         int j=0;
+        // Merge the two arrays
         List<int[]> result = new ArrayList<>();
         while(i<m && j<n){
             if(nums1[i][0] == nums2[j][0]){
