@@ -2,7 +2,6 @@ import java.util.HashSet;
 import java.util.Set;
 public class DS873 {
     class Solution {
-
         public int lenLongestFibSubseq(int[] arr) {
             int n = arr.length;
             // Store array elements in set for O(1) lookup
@@ -10,7 +9,6 @@ public class DS873 {
             for (int num : arr) {
                 numSet.add(num);
             }
-    
             int maxLen = 0;
             // Try all possible first two numbers of sequence
             for (int start = 0; start < n; ++start) {
@@ -44,6 +42,6 @@ public class DS873 {
         System.out.println(solution.lenLongestFibSubseq(arr)); // 3
         arr = new int[]{1, 5, 7, 10, 12, 15, 20};
         System.out.println(solution.lenLongestFibSubseq(arr)); // 0 
-        
+         
     }
 }
