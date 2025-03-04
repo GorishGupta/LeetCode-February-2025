@@ -9,10 +9,5 @@ public class DS1780 {
             }
             return true;
         }
-        public static void main(String[] args) {
-           int n = 27;
-                System.out.println(checkPowerofThree(n));
-                
-        }
     }
 }
